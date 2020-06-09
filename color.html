@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>按钮改变网页颜色</title>
+    </head>
+    <body style="background: #000000">
+        <input type="color" id="onchange">
+    </body>
+    <script type="text/javascript">
+        document.getElementById('onchange').onchange = function(){
+            document.getElementById('onchange').click();
+            document.body.style.background = this.value;
+        }
+    </script>
+</html>
